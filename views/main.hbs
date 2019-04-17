@@ -10,19 +10,19 @@
     </style>
 </head>
 <body>
-Name: <input type="text" id ='myText' value ='Enter Name Here'>
+    Name:<input type="text" id ='myText' value ='Enter Name Here'>
 
-<button onclick="myFunction()">Print Name</button>
+    <button onclick="myFunction()">Print Name</button>
 
-<a href = "about">{{about}}</a> <br><br><br>
-<a href = "currency">{{currency}}</a>
+    <a href = "about">{{about}}</a> <br><br><br>
+    <a href = "currency">{{currency}}</a>
 
-<script>
-    function myFunction() {
-        var x = document.getElementById("myText").value;
-        document.getElementById('demo').innerHTML = x;
-    }
-</script>
+    <script>
+        function myFunction() {
+            var name = document.getElementById('myText').value;
+            document.getElementById('demo').innerHTML = name;
+        }
+    </script>
 </body>
 {{> footer}}
 </html>
